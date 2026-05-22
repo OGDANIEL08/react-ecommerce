@@ -1,0 +1,41 @@
+.best-selling {
+  width: 100%;
+  padding: 40px 20px;
+  background: linear-gradient(
+  135deg,
+  #FAFFFD 0%,
+  #F1F8F8 45%,
+  #E4F1F1 100%
+);
+}
+
+.best-selling h1 {
+  color: #0B0033;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.best-selling  hr {
+  width: 200px;
+  margin: auto;
+  height: 5px;
+  border-radius: 10px;
+  background: #252525;
+  margin-bottom: 10px;
+}
+
+.best-selling-items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 7px;
+  padding: 3px;
+}
+
+@media (min-width: 992px) {
+  .best-selling-items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

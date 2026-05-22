@@ -1,0 +1,146 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 8%;
+  max-height: 80vh;
+  width: 100%;
+  min-width: 300px;
+  height: auto;
+  background:  linear-gradient(
+  135deg,
+  #0B0033 0%,
+  #131A4A 45%,
+  #297373 100%
+);
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(11, 0, 51, 0.15);
+}
+
+
+.hero-left {
+  flex: 1;
+  max-width: 550px;
+}
+
+.hero-left h2 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero-left p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 4px 0;
+}
+
+
+.hero-latest-btn {
+  margin-top: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #283694;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.hero-latest-btn:hover {
+  transform: scale(1.03);
+}
+
+.hero-latest-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+.hero-right {
+  display: flex;
+  gap: 35px;
+}
+
+.icon-card {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 94px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+.trend-icon {
+  color: #50d7d7;
+}
+
+
+
+.hero-right img {
+  width: 100%;
+  max-width: 420px;
+  object-fit: contain;
+  padding: 25px;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25));
+  transition: transform 0.4s ease;
+}
+
+.hero-right img:hover {
+  transform: translateY(-6px);
+}
+
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 12px 5%;
+    height: 30vh;
+    min-height: 240px;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-left h2 {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .hero-left p {
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 2px 0;
+  }
+
+  .hero-latest-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  .hero-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  .icon-card {
+    margin-top: -225px;
+    opacity: 0.18;
+  }
+
+}

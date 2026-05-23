@@ -14,23 +14,24 @@
   position: relative;
 }
 
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+  gap: 8px;
+}
 .navbar .logo h1 {
   color: #0B0033;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  margin-top: -13px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.logo-icon {
+
+.navbar .logo-icon {
   font-size: 30px;
   color: #0B0033;
   
 }
-
 
 .nav-menu {
   list-style: none;
@@ -77,7 +78,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #283694;
+  background: #283694ee;
   border-radius: 50%;
   font-size: 15px;
   margin-left: -32px;

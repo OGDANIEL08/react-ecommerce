@@ -8,15 +8,16 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        {!menuOpen ? '☰' : 'X' } 
+      </div>
       <div className="logo">
         <h1>Aduke</h1>
         <HiOutlineShoppingBag className="logo-icon"/>
       </div>
       
 
-      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-        ☰
-      </div>
+    
 
       <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
         <li>Shop</li>

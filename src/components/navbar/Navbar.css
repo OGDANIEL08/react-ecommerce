@@ -98,6 +98,10 @@
 
   .hamburger {
     display: block;
+    transition: all 0.3s ease;
+  }
+  .hamburger:active {
+    transform: translateX(10px);
   }
 
   .nav-menu li {
@@ -125,6 +129,7 @@
   .nav-menu.active {
     display: flex;
     left: 0;
+    transition: 0.2s ease;
   }
 
   .nav-login-cart {

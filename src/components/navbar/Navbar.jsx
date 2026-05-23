@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-        {!menuOpen ? '☰' : 'X' } 
+        {!menuOpen ? '☰' : '✖' } 
       </div>
       <div className="logo">
         <h1>Aduke</h1>

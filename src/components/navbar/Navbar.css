@@ -51,6 +51,11 @@
   color: #1c2668;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav-login-cart {
   display: flex;
   align-items: center;
@@ -108,29 +113,31 @@
     border-bottom: 1px solid black;
     width: 100%;
     text-align: center;
+    cursor: pointer;
   }
+.nav-menu {
+  position: absolute;
+  top: 50px;
+  left: -100%;
+  flex-direction: column;
+  width: 50%;
+  height: 300px;
+  line-height: 40px;
+  background: rgba(250, 255, 253, 0.95);
+  backdrop-filter: blur(10px);
+  gap: 15px;
+  padding: 20px 0;
+  border-bottom: 1px solid #D7E4E4;
 
-  .nav-menu {
-    position: absolute;
-    top: 50px;
-    left: -1000px;
-    flex-direction: column;
-    width: 50%;
-    height: 300px;
-    line-height: 40px;
-    background: rgba(250, 255, 253, 0.95);
-    backdrop-filter: blur(10px);
-    gap: 15px;
-    padding: 20px 0;
-    display: none;
-    border-bottom: 1px solid #D7E4E4;
-  }
+  display: flex; /* keep flex always */
+  transition: left 0.3s ease;
+}
 
-  .nav-menu.active {
-    display: flex;
-    left: 0;
-    transition: 0.2s ease;
-  }
+.nav-menu.active {
+  left: 0;
+}
+
+
 
   .nav-login-cart {
     gap: 10px;

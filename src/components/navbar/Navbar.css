@@ -51,10 +51,15 @@
   color: #1c2668;
 }
 
+
 .nav-link {
   text-decoration: none;
   color: inherit;
+  display: block;      
+  width: 100%;
+  height: 100%;
 }
+
 
 .nav-login-cart {
   display: flex;
@@ -115,29 +120,28 @@
     text-align: center;
     cursor: pointer;
   }
-.nav-menu {
-  position: absolute;
-  top: 50px;
-  left: -100%;
-  flex-direction: column;
-  width: 50%;
-  height: 300px;
-  line-height: 40px;
-  background: rgba(250, 255, 253, 0.95);
-  backdrop-filter: blur(10px);
-  gap: 15px;
-  padding: 20px 0;
-  border-bottom: 1px solid #D7E4E4;
-
-  display: flex; /* keep flex always */
-  transition: left 0.3s ease;
-}
-
-.nav-menu.active {
-  left: 0;
-}
+  .nav-menu {
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    flex-direction: column;
+    width: 50%;
+    height: 300px;
+    line-height: 40px;
+    background: rgba(250, 255, 253, 0.95);
+    backdrop-filter: blur(10px);
+    gap: 15px;
+    padding: 20px 0;
+    border-bottom: 1px solid #D7E4E4;
+    z-index: 999;
+    display: flex; 
+    transition: left 0.3s ease;
+  }
 
 
+  .nav-menu.active {
+    left: 0;
+  }
 
   .nav-login-cart {
     gap: 10px;
